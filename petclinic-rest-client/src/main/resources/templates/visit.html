@@ -1,8 +1,32 @@
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Visits</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Visits</h1>
+<div th:switch="${visits}">
+    <h2 th:case="null">No visits yet!</h2>
+    <div th:case="*">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date of Visit</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="visit : ${visits}">
+                <td th:text="${visit.dateOfVisit}"></td>
+                <td th:text="${visit.description}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/addVisit">Add a new Visit</a></p>
+</div>
+
 </body>
+
 </html>

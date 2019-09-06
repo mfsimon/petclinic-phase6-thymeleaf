@@ -1,8 +1,21 @@
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Add Owner</title>
 </head>
 <body>
 <h1>Add Owner</h1>
+<form action="#"  th:action="@{/submitOwner}" th:object="${owner}" method="post">
+
+        Name:<br>
+        <input type="text" name="name" value=""><br><br>
+        Address:<br>
+        <input type="text" name="address" value=""><br><br>
+        City:<br>
+        <input type="text" name="city" value=""><br><br>
+        Phone Number:<br>
+        <input type="text" name="phoneNumber" value=""><br><br>
+        <input type="submit" value="Submit">
+
+</form>
 </body>
 </html>

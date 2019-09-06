@@ -1,8 +1,33 @@
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Pets</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Pets</h1>
+<div th:switch="${pets}">
+    <h2 th:case="null">No pets yet!</h2>
+    <div th:case="*">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Birth Date</th>
+                <th>Pet Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="pet : ${pets}">
+                <td th:text="${pet.name}"></td>
+                <td th:text="${pet.birthDate}"></td>
+                <td th:text="${pet.petType}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/addOwner">Add a new Pet</a></p>
+</div>
+
 </body>
+
 </html>

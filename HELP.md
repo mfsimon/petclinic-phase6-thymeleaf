@@ -28,7 +28,7 @@ The following guides illustrate how to use some features and patterns applied in
 * [Spring Boot Features](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-spring-application.htmlhtml)
 * [Lambdas and Closures](https://stackoverflow.com/questions/220658/what-is-the-difference-between-a-closure-and-a-lambda)
 * [Spring Boot Demos (Baeldung)](https://baeldung.com/spring-boot)
-* [Controller, Service, Repository Pattern](https://medium.com/@erwinalberto/part-3-spring-boot-components-controller-service-persistence-dao-7e8c8f1c844b)
+* [Controller, Service, Repository Pattern](https://medium.com/@erwinalberto/part-3-spring-boot-components-com.example.petclinic.controller-service-persistence-dao-7e8c8f1c844b)
 
 ###### Phase 3 Links
 * [Aggregation vs Composition](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
